@@ -5,7 +5,7 @@ import Navbar from '../comp/Navbar';
 
 export default function About() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900">
       <Head>
         <title>About ResumeTuna | Smart Resume Builder</title>
         <meta name="description" content="Learn about ResumeTuna - the modern resume builder that helps you create professional, ATS-friendly resumes" />
@@ -13,7 +13,7 @@ export default function About() {
 
       <Navbar />
 
-      <main className="bg-white dark:bg-slate-900 pt-24 pb-16">
+      <main className="pt-24 pb-16">
         {/* Hero Section */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-slate-800 dark:text-white mb-6">About ResumeTuna</h1>
@@ -36,7 +36,6 @@ export default function About() {
             </div>
             <div className="bg-slate-100 dark:bg-slate-800 rounded-xl p-8 flex items-center justify-center">
               <div className="relative h-64 w-full">
-                {/* You'll need to add this image to your public directory */}
                 <Image 
                   src="/mission-image.jpg" 
                   alt="Resume creation illustration" 
@@ -229,6 +228,6 @@ export default function About() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
