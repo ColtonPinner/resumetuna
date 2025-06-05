@@ -165,8 +165,8 @@ export default function About() {
                     />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 dark:text-white">Alex Chen</h3>
-                <p className="text-green-600 dark:text-green-400 mb-2">UX Designer</p>
+                <h3 className="text-xl font-bold text-slate-800 dark:text-white">Andrew Chen</h3>
+                <p className="text-green-600 dark:text-green-400 mb-2">Founder</p>
                 <p className="text-slate-600 dark:text-slate-300">
                   Expert in designing intuitive user experiences and beautiful interfaces.
                 </p>
