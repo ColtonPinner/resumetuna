@@ -2,10 +2,21 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Navbar from '../comp/Navbar';
+import { Geist, Geist_Mono } from 'next/font/google';
+
+// Use the same font setup as index.js
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export default function About() {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-900">
+    <div className={`${geistSans.className} ${geistMono.className} min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)] bg-white dark:bg-slate-900`}>
       <Head>
         <title>About ResumeTuna | Smart Resume Builder</title>
         <meta name="description" content="Learn about ResumeTuna - the modern resume builder that helps you create professional, ATS-friendly resumes" />

@@ -38,16 +38,7 @@ export default function Home() {
             Get Started for Free
           </a>
         </Link>
-        <div className="mt-12">
-          <Image
-            src="/resume-showcase.png"
-            alt="ResumeTuna App Preview"
-            width={1000}
-            height={600}
-            className="rounded-lg shadow-xl w-full max-w-4xl mx-auto"
-            priority
-          />
-        </div>
+       
       </section>
 
       {/* Value Proposition */}
